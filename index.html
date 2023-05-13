@@ -4,15 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Alura Encryptor</title>
     <link rel="stylesheet" href="src/reset.css" />
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <div>
-      <header></header>
-      <main></main>
-      <footer></footer>
+    <div class="app-container">
+      <main class="app">
+        <header class="header">
+          <div class="header__logo-container"></div>
+          <ul class="header__palette-colors-container">
+            <li class="header__palette-item"></li>
+            <li class="header__palette-item"></li>
+            <li class="header__palette-item"></li>
+          </ul>
+        </header>
+        <form class="container__elements input__form">
+          <textarea
+            class="input__textarea"
+            rows="12"
+            name="input_textarea"
+            placeholder="Ingresa el texto aquí"
+          ></textarea>
+          <p class="input__information">
+            <span class="input__information-logo"></span> Solo letras minúsculas
+            y sin acentos
+          </p>
+          <div class="input__btn-container">
+            <button class="app__btn app__btn--encrypter" id="encrypter">
+              Encriptar
+            </button>
+            <button class="app__btn" id="decryptor">Desencriptar</button>
+          </div>
+        </form>
+        <section class="container__elements output-container"></section>
+      </main>
+      <footer class="footer-container">*FOOTER*</footer>
     </div>
 
     <script src="src/index.js" type="module"></script>
