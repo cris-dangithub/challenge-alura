@@ -5,11 +5,11 @@
   font-family: "Inter", sans-serif;
 }
 :root {
-  --color-light-blue: #609ed4;
-  --color-medium-blue: #356ea9;
-  --color-dark-blue: #0a3871;
-  --color-night-blue: #072b61;
-  --color-navy-blue: #052051;
+  --color-light: #609ed4;
+  --color-medium: #356ea9;
+  --color-dark: #0a3871;
+  --color-night: #072b61;
+  --color-navy: #052051;
   --color-light-gray: #ced4da;
   --color-medium-gray: #adb5bd;
   --color-dark-gray: #868e96;
@@ -20,6 +20,41 @@
   --color-pearl-white: #e9ecf8;
   --color-light-lilac: #aab2d5;
   --color-dark-lilac: #757fb2;
+}
+.blueTheme {
+  --color-light: #609ed4;
+  --color-medium: #356ea9;
+  --color-dark: #0a3871;
+  --color-night: #072b61;
+  --color-navy: #052051;
+  --color-light-gray: #ced4da;
+  --color-medium-gray: #adb5bd;
+  --color-dark-gray: #868e96;
+  --color-carbon-gray: #495057;
+  --color-black-gray: #343a40;
+  --color-bluish-white: #f3f5fc;
+  --color-pearly-white: #eff1fa;
+  --color-pearl-white: #e9ecf8;
+  --color-light-lilac: #aab2d5;
+  --color-dark-lilac: #757fb2;
+}
+
+.yellowTheme {
+  --color-light: #f7eac9;
+  --color-medium: #f5dd88;
+  --color-dark: #f0cf45;
+  --color-night: #dac12f;
+  --color-navy: #b2a223;
+  --color-light-gray: #dadace;
+  --color-medium-gray: #bdbcad;
+  --color-dark-gray: #969686;
+  --color-carbon-gray: #565749;
+  --color-black-gray: #3e4034;
+  --color-bluish-white: #fcfbf3;
+  --color-pearly-white: #f9faef;
+  --color-pearl-white: #f8f8e9;
+  --color-light-lilac: #d5d4aa;
+  --color-dark-lilac: #a8b275;
 }
 
 body {
@@ -70,7 +105,7 @@ button {
   aspect-ratio: 1;
   cursor: pointer;
   background-color: #a2e6e9;
-  border: 1px solid var(--color-dark-blue);
+  border: 1px solid var(--color-dark);
 }
 .input__form {
   display: grid;
@@ -84,11 +119,11 @@ button {
   background-color: transparent;
   border: none;
   font-size: 2rem;
-  color: var(--color-dark-blue);
+  color: var(--color-dark);
 }
 
 .input__textarea::placeholder {
-  color: var(--color-dark-blue);
+  color: var(--color-dark);
 }
 
 .input__information {
@@ -107,13 +142,13 @@ button {
   padding: 1.5rem 1rem;
   flex: 1;
   border-radius: 1.5rem;
-  border: 1px solid var(--color-dark-blue);
+  border: 1px solid var(--color-dark);
   background-color: transparent;
-  color: var(--color-dark-blue);
+  color: var(--color-dark);
 }
 
 .app__btn--encrypter {
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-dark);
   color: #fff;
 }
 

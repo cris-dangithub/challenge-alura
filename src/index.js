@@ -27,6 +27,9 @@ function insertEvents() {
     const textDecrypted = decrypt(textValue);
     renderOutput(textDecrypted);
   });
+  paletteColorItems.forEach((paletteColor) => {
+    paletteColor.addEventListener("click", (e) => {});
+  });
 }
 
 function renderOutput(text = "") {
@@ -113,5 +116,7 @@ const HeaderLogo = document.querySelector(".header__logo-container");
 const ExclamationLogo = document.querySelector(".input__information-logo");
 const form = document.querySelector(".input__form");
 const output = document.querySelector(".output-container");
+const paletteColorItems = document.querySelectorAll(".header__palette-item");
+const paletteColors = ["yellow", "blue", "red"];
 
 App();
